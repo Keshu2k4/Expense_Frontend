@@ -1,0 +1,135 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 2px solid ;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+.balance{
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+.income-expense-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+  background-color: #ffffff;
+  max-width: 350px;
+}
+.textfield{
+  padding: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+  background-color: #ffffff;
+  max-width: 350px;
+}
+.income, .expense{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.income.title, .expense.title{
+  font-size: 20px;
+}
+.income{
+  color: green;
+}
+.expense{
+  color: red;
+}
+.block{
+  width: 2px;
+  background-color: #aaa;
+  height: 40px;
+  border-radius: 10px;
+}
+form button{
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+form button:hover{ 
+  color: white;
+  background-color: #000000;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+.but{
+  display: flex;
+  justify-content: center;
+}
+form .error{
+  color: red;
+  font-size: 12px;
+  margin: 0 0 0.75rem 0;
+}
+/* Expense Item */
+.expense-title{
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+  background-color: #ffffff;
+  flex-grow: 1;
+}
+.expense-item.positive{
+  border-right: 50px solid green;
+}
+.expense-item.negative{
+  border-right: 50px solid red;
+}
+.expense-item-container{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 400px;
+  gap: 10px;
+}
+.delete-btn{
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+.delete-btn:hover{
+  color: white;
+  background-color: #000000;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+.input-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 200px;
+  margin: 5px auto;
+}
